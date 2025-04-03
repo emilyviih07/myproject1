@@ -7,7 +7,7 @@ import { Avatar } from 'react-native-elements';
 import { Icon } from 'react-native-vector-icons/FontAwesome';
 
 
-export default function login() {
+ function login() {
   return (
     <View style={styles.container}>
     
@@ -28,21 +28,73 @@ export default function login() {
 <Input placeholder="Senha" secureTextEntry={true} />
       <StatusBar style="auto" />
 
-      <Button
-  title="Logar"
-/>
-
-<Button
-  title="Cadastre-se"
-  type="outline"
-/>
-
+      <Button style={styles.button} title="CADASTRA">
+        </Button>
+<Text><br></br></Text>
+<Button style={styles.button} title="CADASTRA">
+      
+      </Button>
+<Text><br></br></Text>
 <Text>Esqueceu a senha</Text>
     </View>
     
   );
 
   
+}
+ function cadastro() {
+  return (
+    <View style={styles.container}>
+
+<Text>CADASTRO</Text>
+
+<Input
+  placeholder='Nome'
+  leftIcon={{ type: 'font-awesome', name: 'chevron-left' }}
+/>
+
+<Input
+  placeholder='Email'
+  leftIcon={{ type: 'font-awesome', name: 'chevron-left' }}
+/>
+
+<Input placeholder="Senha" secureTextEntry={true} />
+      <StatusBar style="auto" />
+
+      <Button style={styles.button} title="CADASTRA">
+      
+      </Button>
+  
+
+    
+    
+    </View>
+    
+  );
+
+  
+}
+export default  function esqueceuSenha() {
+  return (
+    <View style={styles.container}>
+
+<Text>Esqueceu a senha</Text>
+
+<Input
+  placeholder='Email'
+  leftIcon={{ type: 'font-awesome', name: 'chevron-left' }}
+/>
+
+<Button style={styles.button} title="ENVIAR">
+      
+      </Button>
+  
+  
+    
+    
+    </View>
+    
+  );
 }
 
 const styles = StyleSheet.create({
@@ -51,5 +103,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  button: {
+    backgroundColor: 'black', 
+    paddingVertical: 25,         
+    width: 200,               
   },
 });
