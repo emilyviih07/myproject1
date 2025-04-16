@@ -96,6 +96,7 @@ export default function App() {
     </View>
   );
 
+  
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerWrapper}>
